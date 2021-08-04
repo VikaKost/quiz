@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content" id="start-block">
+            <h2 class="title">Распродажа <br />кредитов 2021</h2>
+            <span class="disc">
+                Этим летом банки понизили<br />ставки на некоторые кредиты<br />и упростили получение
+            </span>
+            <div class="start-box">
+                <span>Заполни форму и найди<br />
+                    кредит, который тебе выдадут<br />
+                    с минимальной ставкой</span>
+                <button class="start-btn" id="start">Начать<img src="img/arrow.svg"></button>
+            </div>
+            <div class="cookies">Этот веб-сайт использует cookies <a href="#">ОК</a></div>
+        </div>
+
+        <div class="content q-content" id='q-5'>
+            <div>
+                <span class="q-num">Поехали, вопрос 5 из 6</span>
+                <h4 class="q-title">Как вам рассказать о вариантах?</h4>
+                <form class="q-form" id="q-form">
+                    <div class="form-item select-item">
+                        <label>Ваше имя</label>
+                        <input placeholder="Ваше имя" class="form-input" id="name" required />
+                    </div>
+                    <div class="form-item">
+                        <label>Где лучше связаться?</label>
+
+                        <div id=selectBox>
+                            <img src="img/arrow-bottom.svg" alt="" class=arrow />
+                            <p class=valueTag name=select id="phone-type">По телефону</p>
+                            <ul id=selectMenuBox>
+                                <li class=option>По телефону</li>
+                                <li class=option>Telegram</li>
+                                <li class=option>Viber</li>
+                                <li class=option>WhatsApp</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label>Ваш телефон</label>
+                        <input class="form-input" id="phone" type="tel" placeholder="Ваш телефон" required />
+                    </div>
+                    <button type="submit" class="start-btn" id="finish">далее<img src="img/arrow.svg"></button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="content q-content" id='q-6'>
+            <div>
+                <span class="finish-disc">Cупер, мы свяжемся с вами<br />в течение часа!</span>
+                <h2 class="finish-title">ПОДАРОК! ПОЛУЧИТЕ КАРТУ БОНУСОВ “ХАЛВА MAX” ОТ МТБАНКА!</h2>
+                <div class="finish-info">
+                    <div class="fin-item">
+                        <img src="img/fin-1.svg" />
+                        <span>Рассрочка 0%</span>
+                    </div>
+                    <div class="fin-item">
+                        <img src="img/fin-2.svg" />
+                        <span>Можно снимать деньги</span>
+                    </div>
+                    <div class="fin-item">
+                        <img src="img/fin-3.svg" />
+                        <span>Мани-бэк до 1,5%</span>
+                    </div>
+                    <div class="fin-item">
+                        <img src="img/fin-4.svg" />
+                        <span>Лимит до 5000 руб</span>
+                    </div>
+                </div>
+                <button class="start-btn" id="get-card">Получить карту в один клик</button>
+                <span class="add-text">Нет, спасибо</span>
+                <div>
+                </div>
+
+            </div>
+        </div>
+        <img src="img/card.png" class="card" />
+        <img src="img/card-blur.png" class="card-blur" />
+    </div>
+    <script src="script.js"></script>
+    <script src="list.js"></script>
+</body>
+
+</html>
